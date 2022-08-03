@@ -48,7 +48,7 @@ body {
     &__star {
         width: 45px;
         height: 45px;
-        background: lighten($color-neutral-400, 8);
+        background: lighten($color-neutral-400, 3);
         border-radius: 50%;
         display: grid;
         place-content: center;
@@ -79,7 +79,7 @@ body {
         &__number {
             width: 45px;
             height: 45px;
-            background: lighten($color-neutral-400, 8);
+            background: lighten($color-neutral-400, 2);
             color: $color-neutral-300;
             border-radius: 50%;
             display: grid;
@@ -156,7 +156,7 @@ body {
         display: grid;
         place-items: center;
         gap: 1em;
-        padding-block: 0.5em;
+        padding-block: 1em;
 
         &__title {
             color: $color-neutral-100;
