@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/public/images/favicon-32x32.png"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | Interactive rating component</title>
+        <link rel="stylesheet" lang="sass" href="style.scss" />
+    </head>
+    <body>
+        <!-- rating card -->
+        <div class="rating-card" id="ratingCard">
+            <div class="rating-card__star">
+                <img src="./public/images/icon-star.svg" alt="a star icon" />
+            </div>
+            <div class="rating-card__message">
+                <h1 class="rating-card__message__title">How did we do?</h1>
+
+                <p class="rating-card__message__description">
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
+            </div>
+
+            <div class="rating-card__rating-numbers">
+                <div class="rating-card__rating-numbers__number" data-rate>
+                    1
+                </div>
+                <div class="rating-card__rating-numbers__number" data-rate>
+                    2
+                </div>
+                <div class="rating-card__rating-numbers__number" data-rate>
+                    3
+                </div>
+                <div class="rating-card__rating-numbers__number" data-rate>
+                    4
+                </div>
+                <div class="rating-card__rating-numbers__number" data-rate>
+                    5
+                </div>
+            </div>
+            <button class="rating-card__btn" id="submitBtn">Submit</button>
+        </div>
+
+        <!-- success card -->
+        <div class="success-card" id="successCard">
+            <img
+                src="./public/images/illustration-thank-you.svg"
+                alt="thank you illustration"
+                class="success-card__success-image"
+            />
+            <div class="success-card__selected-rate">
+                You Selected <span id="selectedRateContainer">4</span> out of 5
+            </div>
+            <div class="success-card__message">
+                <h1 class="success-card__message__title">Thank You!</h1>
+                <p class="success-card__message__description">
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don’t hesitate to get in touch!
+                </p>
+            </div>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
